@@ -1,0 +1,10 @@
+---
+
+- name: Collect IOS facts
+  hosts: 192.168.100.1
+
+  tasks:
+
+    - name: Facts
+      ios_facts:
+        gather_subset: all
