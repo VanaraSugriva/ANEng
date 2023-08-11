@@ -1,2 +1,0 @@
-# QTM
-QTM support
