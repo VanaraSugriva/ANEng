@@ -1,0 +1,13 @@
+- name: Run config cmd on routers
+  hosts: all
+
+  tasks:
+
+    - name: NTP config
+      cli_config:
+        config: "{{ ntp_config }}"
+      register: command_output
+
+    - name: debug registered var
+      debug:
+        var: command_output
